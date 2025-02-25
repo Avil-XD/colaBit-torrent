@@ -143,6 +143,15 @@ PRO = "350GB"     # With GPU runtime
 └────────────────┴────────────────────
 ```
 
+## 📜 License
+
+```
+[MIT LICENSE]
+├── ✅ Free to use and modify
+├── 📄 Include license notice
+└── ⚖️ No liability
+```
+
 ## 🛡️ Usage Guidelines
 
 ```
