@@ -45,17 +45,17 @@ Your Google Colab-Based Cloud Torrent Downloader
 ### 1. Launch
 ```
 ➜ Click "Open in Colab" above
-image
+![Image](image.png)
 
 ➜ Start Runtime --> Run All (Restart any failed cell manually if error occurs)
-image
+![Image](image-1.png)
 
 
 ```
 
 ### 2. Input
 ```
-image
+![Image](image-2.png)
 
 Supports:
 ✓ Magnet links
@@ -71,7 +71,9 @@ Supports:
 After Completion --> Zip the torrent download (Run zipping cell)
 image
 After Zipping --> Download Zip File from folders on left
-image
+
+![Image](image-3.png)
+
 
 STORAGE_PATH = '/content/Torrent/'
 OUTPUT_FILE = 'Downloaded-Torrent.zip'
