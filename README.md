@@ -43,20 +43,21 @@ Your Google Colab-Based Cloud Torrent Downloader
 ## 🚀 Usage Guide
 
 ### 1. Launch
+<a href="https://colab.research.google.com/github/pollmix/google-colab-torrent-downloader/blob/master/torrent.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 ```
-➜ Click "Open in Colab" above
-![Image](image.png)
+➜ Click "Open in Colab" above 
 
 ➜ Start Runtime --> Run All (Restart any failed cell manually if error occurs)
-![Image](image-1.png)
-
-
 ```
+
+![](./image-1.png)
 
 ### 2. Input
-```
-![Image](image-2.png)
 
+>Enter the magnet/.torrent file Link and press enter
+
+![](./image-2.png)
+```
 Supports:
 ✓ Magnet links
 ✓ .torrent file URLs (auto-converts to magnet)
@@ -69,16 +70,10 @@ Supports:
 - Speed (up/down KB/s)
 
 After Completion --> Zip the torrent download (Run zipping cell)
-image
 After Zipping --> Download Zip File from folders on left
 
-![Image](image-3.png)
-
-
-STORAGE_PATH = '/content/Torrent/'
-OUTPUT_FILE = 'Downloaded-Torrent.zip'
-
 ```
+![](./image-3.png)
 
 ## 🚀 Technical Stack
 
@@ -138,14 +133,14 @@ PRO = "350GB"     # With GPU runtime
 
 ```
 [COMMON SOLUTIONS]
-┌────────────────┬────────────────────┐
-│ Issue          │ Fix               │
-├────────────────┼────────────────────┤
+┌────────────────┬────────────────────
+│ Issue          │ Fix               
+├────────────────┼────────────────────
 │ Slow Speed     │ Check peer count  │
 │ Space Full     │ Enable GPU mode   │
 │ Metadata Stuck │ Allow completion  │
 │ ZIP Error      │ Check free space  │
-└────────────────┴────────────────────┘
+└────────────────┴────────────────────
 ```
 
 ## 🛡️ Usage Guidelines
