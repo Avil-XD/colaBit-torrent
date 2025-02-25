@@ -8,32 +8,74 @@
 \____/\____/_/\__,_/_____/_/\__/  
 ```
 
-# C0LAB1T
+# colaBit-Torrent
 
-Your Browser-Based Torrent Command Center
+Your Google Colab-Based Cloud Torrent Downloader
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Avil-XD/colaBit-torrent/blob/master/colaBit.ipynb)
-[![GitHub license](https://img.shields.io/github/license/Avil-XD/colaBit-torrent)](https://github.com/Avil-XD/colaBit-torrent/blob/master/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/Avil-XD/colaBit-torrent)](https://github.com/Avil-XD/colaBit-torrent/stargazers)
 
 </div>
 
 ---
 
-> Transform your browser into a powerful torrent downloader using Google's infrastructure. Download at high speeds with up to 350GB of cloud storage - no installation needed!
+> Transform your browser into a powerful torrent downloader using Google's infrastructure. Download at high speeds with up to 350GB (Maximum on GPU Runtime) of cloud storage - no installation needed!
 
+## ⚡ Purpose
+```
+✦ Download torrent files where torrent downloading is restricted.
+✦ Make use of google servers download speed.
+✦ No installation of torrent softwares.
+✦ You only need a browser.
+```
 ## ⚡ Key Features
 
 ```
-┌─────────────────────────────────┐
-│ POWER CAPABILITIES             │
-├─────────────────────────────────┤
-│ ✦ Google Server-Speed Downloads│
-│ ✦ Up to 350GB Cloud Storage   │
-│ ✦ Pure Browser Operation      │
-│ ✦ Parallel Download Support   │
-│ ✦ Auto File Compression      │
-└─────────────────────────────────┘
+┌──────────────────────────────── 
+│ POWER CAPABILITIES                     
+├────────────────────────────────         
+│ ✦ Google Server-Speed Downloads        
+│ ✦ Up to 350GB Cloud Storage(GPU)       
+│ ✦ Pure Browser Operation              
+│ ✦ Parallel Download Support             
+│ ✦ Auto File Compression         
+└────────────────────────────────
+```
+## 🚀 Usage Guide
+
+### 1. Launch
+```
+➜ Click "Open in Colab" above
+image
+
+➜ Start Runtime --> Run All (Restart any failed cell manually if error occurs)
+image
+
+
+```
+
+### 2. Input
+```
+image
+
+Supports:
+✓ Magnet links
+✓ .torrent file URLs (auto-converts to magnet)
+```
+
+### 3. Download Process
+```python
+# Progress info shown:
+- Download percentage
+- Speed (up/down KB/s)
+
+After Completion --> Zip the torrent download (Run zipping cell)
+image
+After Zipping --> Download Zip File from folders on left
+image
+
+STORAGE_PATH = '/content/Torrent/'
+OUTPUT_FILE = 'Downloaded-Torrent.zip'
+
 ```
 
 ## 🚀 Technical Stack
@@ -53,8 +95,7 @@ OUTPUT_FILE = 'Downloaded-Torrent.zip'
 PORTS = range(6881, 6891)
 ```
 
-## 📦 Installation
-
+## 📦 Dependencies
 The notebook automatically installs all required dependencies:
 
 ```bash
@@ -66,40 +107,6 @@ $ pip install --upgrade pip setuptools wheel
 $ pip install lbry-libtorrent wget torf
 ```
 
-## 🚀 Usage Guide
-
-### 1. Launch
-```
-➜ Click "Open in Colab" above
-➜ Runtime starts automatically
-```
-
-### 2. Input
-```
-Supports:
-✓ Magnet links
-✓ .torrent file URLs (auto-converts to magnet)
-```
-
-### 3. Download Process
-```python
-# Actual download states:
-STATES = [
-    'queued',
-    'checking',
-    'downloading metadata',
-    'downloading',
-    'finished',
-    'seeding',
-    'allocating'
-]
-
-# Progress info shown:
-- Download percentage
-- Speed (up/down KB/s)
-- Peer count
-- Current state
-```
 
 ## 💾 Storage Options
 
@@ -143,27 +150,6 @@ PRO = "350GB"     # With GPU runtime
 
 ```
 [SAFETY RULES]
-├── 📋 Follow copyright laws
 ├── ✅ Respect Colab terms
 └── 🛡️ Use responsibly
 ```
-
-## 🤝 Community
-
-```
-[JOIN US]
-├── 🐛 Report issues
-├── 💡 Request features
-└── 🔧 Submit PRs
-```
-
----
-
-<div align="center">
-
-### Quick Links
-[![Report Bug](https://img.shields.io/badge/Report-Bug-red)](https://github.com/Avil-XD/colaBit-torrent/issues)
-[![Request Feature](https://img.shields.io/badge/Request-Feature-green)](https://github.com/Avil-XD/colaBit-torrent/issues)
-[![Join Chat](https://img.shields.io/badge/Join-Discussion-blue)](https://github.com/Avil-XD/colaBit-torrent/discussions)
-
-</div>
