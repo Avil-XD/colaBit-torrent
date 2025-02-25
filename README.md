@@ -1,4 +1,4 @@
-# [C0LAB1T]
+<div align="center">
 
 ```
    ______      __      ____  _ __ 
@@ -6,139 +6,164 @@
  / /   / __ \/ / __ `/ __  / / __/
 / /___/ /_/ / / /_/ / /_/ / / /_  
 \____/\____/_/\__,_/_____/_/\__/  
-                                           
->> System: Colab-based Torrent Operations
->> Status: ACTIVE
->> Ver: 1.0
 ```
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Avil-XD/colaBit-torrent/blob/master/ColabTorrentDownloader.ipynb)
+# C0LAB1T
+
+Your Browser-Based Torrent Command Center
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Avil-XD/colaBit-torrent/blob/master/colaBit.ipynb)
 [![GitHub license](https://img.shields.io/github/license/Avil-XD/colaBit-torrent)](https://github.com/Avil-XD/colaBit-torrent/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/Avil-XD/colaBit-torrent)](https://github.com/Avil-XD/colaBit-torrent/stargazers)
 
-[SYS] Browser-based torrent exploitation tool leveraging Google's infrastructure for high-speed data extraction.
+</div>
 
-## [CAPABILITIES]
+---
 
-```
-[+] SERVER_SPEED   : Google Infrastructure
-[+] STORAGE_CAP    : 350GB Cloud Buffer
-[+] DEPLOY_TYPE    : Browser-Only Deployment
-[+] PLATFORM       : Universal Compatibility
-[+] OPSEC          : Cloud-Based Operations
-```
+> Transform your browser into a powerful torrent downloader using Google's infrastructure. Download at high speeds with up to 350GB of cloud storage - no installation needed!
 
-## [CORE_MODULES]
+## ⚡ Key Features
 
 ```
-[*] MAG_LINK_HANDLER    : Active
-[*] TORRENT_PROCESSOR   : Active
-[*] PROGRESS_TRACKER    : Enabled
-[*] AUTO_COMPRESSION    : Running
-[*] DHT_NETWORK        : Online
-[*] MOBILE_INTERFACE   : Ready
+┌─────────────────────────────────┐
+│ POWER CAPABILITIES             │
+├─────────────────────────────────┤
+│ ✦ Google Server-Speed Downloads│
+│ ✦ Up to 350GB Cloud Storage   │
+│ ✦ Pure Browser Operation      │
+│ ✦ Parallel Download Support   │
+│ ✦ Auto File Compression      │
+└─────────────────────────────────┘
 ```
 
-## [DEPLOYMENT_SEQUENCE]
-
-```bash
-# 1. Initialize System
-$ ./launch_colab.sh  # Click "Open in Colab"
-
-# 2. Deploy Environment
-$ ./auto_config.sh   # Auto-configuration starts
-
-# 3. Input Target
-$ ./inject_link.sh   # Paste magnet/torrent URL
-
-# 4. Monitor Operation
-$ ./track_progress   # Real-time stats
-
-# 5. Extract Data
-$ ./compress_download.sh  # Get ZIP package
-```
-
-## [STORAGE_CONFIG]
+## 🚀 Technical Stack
 
 ```python
-# Default Config
-PATH = "/content/Torrent/"
-OUTPUT = "Downloaded-Torrent.zip"
+# Core Dependencies
+LIBRARIES = {
+    'libtorrent': 'Primary torrent handler',
+    'wget': 'Torrent file downloader',
+    'torf': 'Torrent processing',
+    'zipfile': 'Auto compression'
+}
 
-# Storage Allocation
-BASE_STORAGE = "80GB"
-ENHANCED_STORAGE = "350GB"  # with GPU runtime
+# Download Configuration
+STORAGE_PATH = '/content/Torrent/'
+OUTPUT_FILE = 'Downloaded-Torrent.zip'
+PORTS = range(6881, 6891)
 ```
 
-### [ENHANCE_STORAGE]
+## 📦 Installation
+
+The notebook automatically installs all required dependencies:
+
+```bash
+# System Dependencies
+$ apt install python3-libtorrent
+
+# Python Packages
+$ pip install --upgrade pip setuptools wheel
+$ pip install lbry-libtorrent wget torf
 ```
+
+## 🚀 Usage Guide
+
+### 1. Launch
+```
+➜ Click "Open in Colab" above
+➜ Runtime starts automatically
+```
+
+### 2. Input
+```
+Supports:
+✓ Magnet links
+✓ .torrent file URLs (auto-converts to magnet)
+```
+
+### 3. Download Process
+```python
+# Actual download states:
+STATES = [
+    'queued',
+    'checking',
+    'downloading metadata',
+    'downloading',
+    'finished',
+    'seeding',
+    'allocating'
+]
+
+# Progress info shown:
+- Download percentage
+- Speed (up/down KB/s)
+- Peer count
+- Current state
+```
+
+## 💾 Storage Options
+
+```python
+# Available Modes:
+BASIC = "80GB"    # Default mode
+PRO = "350GB"     # With GPU runtime
+
+# Enable PRO mode:
 1. Runtime > Change runtime type
-2. Select: GPU accelerator
-3. Execute: Save changes
+2. Hardware accelerator > GPU
+3. Save
 ```
 
-## [TECH_STACK]
+## ⚡ Advanced Features
 
 ```
-[CORE]
-├── libtorrent : Primary Handler
-├── wget      : URL Processor
-├── torf      : Torrent Parser
-└── zipfile   : Data Compressor
+[SYSTEM CAPABILITIES]
+├── 🔄 Parallel downloading
+├── 🎯 DHT network enabled
+├── 🔄 Auto magnet conversion
+├── 📊 Real-time progress tracking
+└── 🗜️ Automatic ZIP compression
 ```
 
-## [SYSTEM_STATES]
-```
-[*] QUEUED
-[*] CHECKING
-[*] METADATA_DL
-[*] DOWNLOADING
-[*] FINISHED
-[*] SEEDING
-[*] ALLOCATING
-```
-
-## [TROUBLESHOOTING]
+## ⚠️ Troubleshooting
 
 ```
-[ERROR_MATRIX]
-┌─────────────────┬────────────────────────┐
-│ SLOW_TRANSFER   │ Check peer_count       │
-│ SPACE_ERROR     │ Switch to GPU_runtime  │
-│ METADATA_FAIL   │ Allow full completion  │
-│ ACCESS_DENIED   │ Verify ZIP status      │
-└─────────────────┴────────────────────────┘
+[COMMON SOLUTIONS]
+┌────────────────┬────────────────────┐
+│ Issue          │ Fix               │
+├────────────────┼────────────────────┤
+│ Slow Speed     │ Check peer count  │
+│ Space Full     │ Enable GPU mode   │
+│ Metadata Stuck │ Allow completion  │
+│ ZIP Error      │ Check free space  │
+└────────────────┴────────────────────┘
 ```
 
-## [CONTRIBUTE]
+## 🛡️ Usage Guidelines
 
 ```
-[OPERATION_TYPES]
-1. BUG_REPORT    : Submit via GitHub
-2. FEATURE_REQ   : Open new issue
-3. CODE_SUBMIT   : Pull request
-4. INTEL_SHARE   : Join discussion
+[SAFETY RULES]
+├── 📋 Follow copyright laws
+├── ✅ Respect Colab terms
+└── 🛡️ Use responsibly
 ```
 
-## [LICENSE]
+## 🤝 Community
 
 ```
-[MIT_LICENSE]
-└── See LICENSE file for full disclosure
-```
-
-## [OPSEC]
-
-```
-[GUIDELINES]
-├── Respect copyright protocols
-├── Comply with Colab ToS
-└── Maintain operational security
+[JOIN US]
+├── 🐛 Report issues
+├── 💡 Request features
+└── 🔧 Submit PRs
 ```
 
 ---
-```
-[CONTACT_POINTS]
-├── BUG_REPORT: /issues
-├── FEATURE_REQUEST: /issues
-└── DISCUSSIONS: /discussions
+
+<div align="center">
+
+### Quick Links
+[![Report Bug](https://img.shields.io/badge/Report-Bug-red)](https://github.com/Avil-XD/colaBit-torrent/issues)
+[![Request Feature](https://img.shields.io/badge/Request-Feature-green)](https://github.com/Avil-XD/colaBit-torrent/issues)
+[![Join Chat](https://img.shields.io/badge/Join-Discussion-blue)](https://github.com/Avil-XD/colaBit-torrent/discussions)
+
+</div>
