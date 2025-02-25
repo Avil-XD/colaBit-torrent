@@ -20,7 +20,7 @@ Your Google Colab-Based Cloud Torrent Downloader
 
 > Transform your browser into a powerful torrent downloader using Google's infrastructure. Download at high speeds with up to 350GB (Maximum on GPU Runtime) of cloud storage - no installation needed!
 
-## ⚡ Purpose
+## 🦚 Purpose
 ```
 ✦ Download torrent files where torrent downloading is restricted.
 ✦ Make use of google servers download speed.
